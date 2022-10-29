@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "DivineMC",
-  tagline: "DivineMC is the fork of Paper compatible with Spigot plugins, offering best performance for your server.",
+  tagline: "DivineMC is the fork of Pufferfish compatible with Spigot plugins, offering best performance for your server.",
   url: "https://divine.bxteam.gq",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -36,11 +36,11 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/BX-Team/DivineMC-Website/edit/main/",
+          editUrl: "https://github.com/DivineMC/Website/edit/main/",
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/BX-Team/DivineMC-Website/edit/main/",
+          editUrl: "https://github.com/DivineMC/Website/edit/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.scss"),
@@ -94,7 +94,7 @@ const config = {
         },
         { to: "blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/BX-Team/DivineMC",
+          href: "https://github.com/DivineMC/DivineMC",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub Repository",
@@ -109,10 +109,6 @@ const config = {
             {
               label: "FAQ",
               to: "docs/faq",
-            },
-            {
-              label: "Discord",
-              href: "https://discord.gg/p7cxhw7E2M",
             },
           ],
         },
@@ -129,7 +125,7 @@ const config = {
             },
             {
               label: "Releases",
-              href: "https://github.com/BX-Team/Brass-Client/releases",
+              href: "https://github.com/DivineMC/DivineMC/releases",
             },
           ],
         },
@@ -138,7 +134,11 @@ const config = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/runletapp/runlet",
+              href: "https://github.com/DivineMC",
+            },
+            {
+              label: "Discord",
+              href: "https://discord.gg/PrKTKfR579",
             },
           ],
         },

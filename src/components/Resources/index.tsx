@@ -36,7 +36,7 @@ const data: Resource[] = [
       "Check our documentation to get your devices up and running in minutes",
   },
   {
-    href: "https://github.com/BX-Team/DivineMC",
+    href: "https://github.com/DivineMC/DivineMC",
     icon: <FiGithub size={size} />,
     title: "Contribute",
     description:

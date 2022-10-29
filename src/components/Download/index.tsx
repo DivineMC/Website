@@ -74,17 +74,10 @@ const Download = () => {
           </div>
 
           <div className={clsx("col col--4", styles.info)}>
-            <p>
+            <strong>
               We recommend to use latest version of DivineMC for new
               features, patches and bug fixes!
-            </p>
-            <div className={styles.platforms}>
-              <h3>Supported Platforms</h3>
-              <div>
-                <DiWindows size={size} />
-                <DiLinux size={size} />
-              </div>
-            </div>
+            </strong>
           </div>
         </div>
       </div>
