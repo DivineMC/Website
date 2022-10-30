@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "DivineMC",
-  tagline: "DivineMC is the fork of Pufferfish compatible with Spigot plugins, offering best performance for your server.",
+  tagline: "DivineMC is the fork of Paper compatible with Spigot plugins, offering best performance for your server.",
   url: "https://divine.bxteam.gq",
   baseUrl: "/",
   onBrokenLinks: "throw",
