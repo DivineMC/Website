@@ -1,7 +1,5 @@
 # Home
 
-DivineMC is the fork of Paper compatible with Spigot plugins, offering best performance for your server.
-
 ## Features
 
 - **DivineMC is a fork of [Pufferfish](https://github.com/pufferfish-gg/Pufferfish)** which a the best performance Minecraft core.

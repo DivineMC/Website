@@ -1,6 +1,6 @@
 {
-  "name": "brass-website",
-  "description": "BX Team Docs Website",
+  "name": "divinemc-website",
+  "description": "DivineMC Website",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,13 +13,14 @@
     "prettier": "prettier --config .prettierrc --write \"**/*.{js,ts}\"",
     "prettier:diff": "prettier --config .prettierrc --list-different \"**/*.{js,ts}\"",
     "prettier-docs": "prettier --config .prettierrc --write \"**/*.md\"",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "docusaurus": "docusaurus"
   },
   "dependencies": {
-    "@docusaurus/core": "2.1.0",
-    "@docusaurus/module-type-aliases": "2.1.0",
-    "@docusaurus/plugin-ideal-image": "2.1.0",
-    "@docusaurus/preset-classic": "2.1.0",
+    "@docusaurus/core": "^2.2.0",
+    "@docusaurus/module-type-aliases": "^2.2.0",
+    "@docusaurus/plugin-ideal-image": "^2.2.0",
+    "@docusaurus/preset-classic": "^2.2.0",
     "@easyops-cn/docusaurus-search-local": "0.33.4",
     "@mdx-js/react": "1.6.22",
     "clsx": "1.2.1",

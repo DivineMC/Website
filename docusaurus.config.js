@@ -37,6 +37,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/DivineMC/Website/edit/main/",
+          includeCurrentVersion: false,
         },
         blog: {
           showReadingTime: true,
@@ -67,6 +68,11 @@ const config = {
 
   themeConfig: {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
     colorMode: {
       defaultMode: "dark",
       disableSwitch: false,
@@ -76,7 +82,6 @@ const config = {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
     },
-    image: "img/brass.png",
     navbar: {
       hideOnScroll: true,
       title: "DivineMC",
@@ -91,6 +96,10 @@ const config = {
           activeBasePath: "docs",
           label: "Docs",
           position: "left",
+        },
+        {
+          position: "right",
+          type: "docsVersionDropdown"
         },
         { to: "blog", label: "Blog", position: "left" },
         {
