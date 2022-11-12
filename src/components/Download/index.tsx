@@ -15,8 +15,7 @@ const fetcher = (...args: any[]) => fetch(...args).then(res => res.json())
 
 const useLatestRelease = () => {
   const { data, error } = useSWR(
-    //`https://api.github.com/repos/DivineMC/DivineMC/releases/latest`,
-    `https://api.github.com/repos/BX-Team/Brass-Client/releases/latest`,
+    `https://api.github.com/repos/DivineMC/DivineMC/releases/latest`,
     fetcher
   )
 
