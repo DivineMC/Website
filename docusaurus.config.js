@@ -1,13 +1,14 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/dracula")
-const darkCodeTheme = require("prism-react-renderer/themes/dracula")
+const lightCodeTheme = require("prism-react-renderer/themes/dracula");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "DivineMC",
-  tagline: "DivineMC is the fork of Paper compatible with Spigot plugins, offering best performance for your server.",
+  tagline:
+    "DivineMC is the fork of Paper compatible with Spigot plugins, offering best performance for your server.",
   url: "https://divine.bxteam.gq",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -36,12 +37,12 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/DivineMC/Website/edit/main/",
-          includeCurrentVersion: false,
+          editUrl: "https://github.com/DivineMC/Website/edit/main/docs/",
+          // includeCurrentVersion: false,
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/DivineMC/Website/edit/main/",
+          editUrl: "https://github.com/DivineMC/Website/edit/main/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.scss"),
@@ -99,7 +100,7 @@ const config = {
         },
         {
           position: "right",
-          type: "docsVersionDropdown"
+          type: "docsVersionDropdown",
         },
         { to: "blog", label: "Blog", position: "left" },
         {
@@ -147,14 +148,14 @@ const config = {
             },
             {
               label: "Discord",
-              href: "https://discord.gg/PrKTKfR579",
+              href: "https://discord.gg/p7cxhw7E2M",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} BX Team. All rights reserved.`,
+      copyright: `Copyright © ${new Date().getFullYear()} DivineMC & BX Team. All rights reserved. Powered by Netlify`,
     },
   },
-}
+};
 
-module.exports = config
+module.exports = config;

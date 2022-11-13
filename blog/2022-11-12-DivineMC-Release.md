@@ -12,4 +12,4 @@ We are happy to announce, we releasing DivineMC! You can download DivineMC [here
 
 We add Jenkins server soon. Also you can read Installation guide [here](https://divinemc.bxteam.gq/docs/getting-started) and Configuration guide [here](https://divinemc.bxteam.gq/docs/configuration)
 
-If you have questions, you can ask it at our [Discord server](https://discord.gg/PrKTKfR579)
+If you have questions, you can ask it at our [Discord server](https://discord.gg/p7cxhw7E2M)
