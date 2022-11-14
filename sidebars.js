@@ -1,6 +1,9 @@
 module.exports = {
   docs: [
-    "README",
+    {
+      type: "doc",
+      id: "README",
+    },
     {
       type: "category",
       label: "Installation",

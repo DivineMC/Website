@@ -1,3 +1,4 @@
+import Download from "../components/Download";
 import styles from "./styles.module.scss";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Features from "@site/src/components/Features";
@@ -17,6 +18,7 @@ const Home = () => {
 
       <main className={styles.main}>
         <Features />
+        <Download />
         <Resources />
       </main>
     </Layout>

@@ -28,7 +28,7 @@ const Hero = () => {
         <div className={styles.buttons}>
           <AnchorLink
             className={clsx("button button--primary button--lg", styles.button)}
-            href="https://github.com/DivineMC/DivineMC/releases/latest"
+            href="#download"
           >
             Download
           </AnchorLink>
