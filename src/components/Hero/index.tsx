@@ -1,20 +1,17 @@
-import React from "react"
-
-import clsx from "clsx"
-import AnchorLink from "react-anchor-link-smooth-scroll"
-
-import useBaseUrl from "@docusaurus/useBaseUrl"
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
-import screenshot from "@site/static/img/pages/light/homepage-screenshot.png"
+import styles from "./styles.module.scss";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import screenshot from "@site/static/img/pages/light/homepage-screenshot.png";
 // @ts-ignore
-import Image from "@theme/IdealImage"
-
-import styles from "./styles.module.scss"
+import Image from "@theme/IdealImage";
+import clsx from "clsx";
+import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
-  const context = useDocusaurusContext()
-  const { siteConfig } = context
-  const { tagline, title } = siteConfig
+  const context = useDocusaurusContext();
+  const { siteConfig } = context;
+  const { tagline, title } = siteConfig;
 
   return (
     <header id="hero" className={clsx("hero", styles.banner)}>
@@ -40,7 +37,7 @@ const Hero = () => {
 
       <Image img={screenshot} className={clsx("shadow-md", styles.image)} />
     </header>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

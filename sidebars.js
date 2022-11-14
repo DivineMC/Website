@@ -1,12 +1,13 @@
 module.exports = {
   docs: [
-    "README",
+    {
+      type: "doc",
+      id: "README",
+    },
     {
       type: "category",
       label: "Installation",
-      items: [
-           "installation/getting-started",
-      ],
+      items: ["installation/getting-started", "installation/configuration"],
     },
   ],
-}
+};

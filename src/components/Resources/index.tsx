@@ -1,22 +1,19 @@
-import React, { ReactNode } from "react"
-
-import clsx from "clsx"
-import { FaQuestion } from "react-icons/fa"
-import { FiBook, FiEdit3, FiGithub } from "react-icons/fi"
-
-import Link from "@docusaurus/Link"
-import Headline from "@site/src/components/Headline"
-
-import styles from "./styles.module.scss"
+import styles from "./styles.module.scss";
+import Link from "@docusaurus/Link";
+import Headline from "@site/src/components/Headline";
+import clsx from "clsx";
+import React, { ReactNode } from "react";
+import { FaQuestion } from "react-icons/fa";
+import { FiBook, FiEdit3, FiGithub } from "react-icons/fi";
 
 interface Resource {
-  href: string
-  icon: ReactNode
-  title?: string
-  description: string
+  href: string;
+  icon: ReactNode;
+  title?: string;
+  description: string;
 }
 
-const size = 48
+const size = 48;
 const data: Resource[] = [
   {
     href: "docs/faq",
@@ -32,17 +29,16 @@ const data: Resource[] = [
     href: "docs",
     icon: <FiBook size={size} />,
     title: "Documentation",
-    description:
-      "Check our documentation to get your devices up and running in minutes",
+    description: "Check our documentation if you have questions about DivineMC",
   },
   {
     href: "https://github.com/DivineMC/DivineMC",
     icon: <FiGithub size={size} />,
     title: "Contribute",
     description:
-      "Help us improve by submitting bugs and feature requests on GitHub",
+      "Help us to improve DivineMC by submitting bugs and feature requests on GitHub",
   },
-]
+];
 
 const Resource = ({ href, icon, title, description }: Resource) => {
   return (
@@ -56,8 +52,8 @@ const Resource = ({ href, icon, title, description }: Resource) => {
         <p>{description}</p>
       </div>
     </Link>
-  )
-}
+  );
+};
 
 const Resources = () => {
   return (
@@ -91,7 +87,7 @@ const Resources = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Resources
+export default Resources;

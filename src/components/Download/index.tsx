@@ -1,56 +1,53 @@
-import React from "react"
-
-import clsx from "clsx"
-import { filesize } from "filesize"
-import { DiApple, DiLinux, DiWindows } from "react-icons/di"
-import { FiPackage } from "react-icons/fi"
-import useSWR from "swr"
-
-import Headline from "@site/src/components/Headline"
-
-import styles from "./styles.module.scss"
+import styles from "./styles.module.scss";
+import Headline from "@site/src/components/Headline";
+import clsx from "clsx";
+import { filesize } from "filesize";
+import React from "react";
+import { DiApple, DiLinux, DiWindows } from "react-icons/di";
+import { FiPackage } from "react-icons/fi";
+import useSWR from "swr";
 
 // @ts-ignore
-const fetcher = (...args: any[]) => fetch(...args).then(res => res.json())
+const fetcher = (...args: any[]) => fetch(...args).then((res) => res.json());
 
 const useLatestRelease = () => {
   const { data, error } = useSWR(
     `https://api.github.com/repos/DivineMC/DivineMC/releases/latest`,
     fetcher
-  )
+  );
 
   return {
     data: data,
     isLoading: !error && !data,
     isError: error,
-  }
-}
+  };
+};
 
 const icon = (type: string) => {
-  const size = 24
+  const size = 24;
 
   switch (type) {
     case "application/x-apple-diskimage":
-      return <DiApple size={size} />
+      return <DiApple size={size} />;
     case "application/x-msdos-program":
-      return <DiWindows size={size} />
+      return <DiWindows size={size} />;
     case "application/x-debian-package":
-      return <DiLinux size={size} />
+      return <DiLinux size={size} />;
     default:
-      return <FiPackage size={size} />
+      return <FiPackage size={size} />;
   }
-}
+};
 
 const Download = () => {
-  const { data } = useLatestRelease()
-  const size = 36
+  const { data } = useLatestRelease();
+  const size = 36;
 
   return (
     <section id="download" className={styles.download}>
       <div className="container">
         <Headline
           category="Download"
-          title="You can download the latest versions of DivineMC below."
+          title="You can download the latest builds of DivineMC below."
           offset={1}
         />
 
@@ -75,14 +72,14 @@ const Download = () => {
 
           <div className={clsx("col col--4", styles.info)}>
             <strong>
-              We recommend to use latest version of DivineMC for new
-              features, patches and bug fixes!
+              We recommend to use latest version of DivineMC for new features,
+              patches and bug fixes!
             </strong>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Download
+export default Download;

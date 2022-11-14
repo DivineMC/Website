@@ -14,11 +14,8 @@ DivineMC provides optimization for large servers requiring both maximum performa
 
 ### 3. What are the supported versions?
 
-Currently, we are testing DivineMC on Minecraft 1.19.2. Old versions of minecraft will not be supported, but future versions - yes.
+Currently, DivineMC supports Minecraft 1.19.2. Old versions of Minecraft will not be supported, but future versions, such as 1.20.x - yes.
 
 ### 4. Is DivineMC secure?
 
 DivineMC is the fork of Paper, which is well protected from various attacks. But you can also install plugins that give more protect!
-
-### 5. Is this Paper docs?
-Yes, it is. We just changed some words so dont hate us <3
