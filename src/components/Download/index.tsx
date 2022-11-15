@@ -74,6 +74,10 @@ const Download = () => {
             <strong>
               We recommend to use latest version of DivineMC for new features,
               patches and bug fixes!
+              <br></br>
+              <br></br>
+              NOTE: To run Minecraft server you need
+              DivineMC-paperclip-VERSION-reobf.jar
             </strong>
           </div>
         </div>

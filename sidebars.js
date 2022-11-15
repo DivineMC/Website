@@ -9,5 +9,10 @@ module.exports = {
       label: "Installation",
       items: ["installation/getting-started", "installation/configuration"],
     },
+    {
+      type: "category",
+      label: "Development",
+      items: ["dev/contributing"],
+    },
   ],
 };
