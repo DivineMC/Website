@@ -1754,10 +1754,10 @@
     cssesc "^3.0.0"
     immediate "^3.2.3"
 
-"@easyops-cn/docusaurus-search-local@0.33.4":
-  version "0.33.4"
-  resolved "https://registry.npmjs.org/@easyops-cn/docusaurus-search-local/-/docusaurus-search-local-0.33.4.tgz"
-  integrity sha512-ULgwAlpuEJcqAkfU4P1+b03ybhx25JqffB/u+MA97RK6sJtfwQ5zJiP8Ld/YEMIPaawz9N3iXsebM4NrDVsWQA==
+"@easyops-cn/docusaurus-search-local@0.33.5":
+  version "0.33.5"
+  resolved "https://registry.npmjs.org/@easyops-cn/docusaurus-search-local/-/docusaurus-search-local-0.33.5.tgz"
+  integrity sha512-9juHGVUy6N37Ezg1Msz1paMqT3zrQIlRLNJVw/NTG3aSctaYw1W0zAIRieXgBKvBAPkcCn95GsUrcziH13Grsw==
   dependencies:
     "@docusaurus/plugin-content-docs" "^2.0.0-rc.1"
     "@docusaurus/theme-translations" "^2.0.0-rc.1"
