@@ -135,7 +135,7 @@ const config = {
             },
             {
               label: "Releases",
-              href: "https://github.com/DivineMC/DivineMC/releases",
+              href: "https://github.com/DivineMC/DivineMC/releases/latest",
             },
           ],
         },
