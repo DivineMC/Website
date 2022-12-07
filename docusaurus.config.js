@@ -117,8 +117,8 @@ const config = {
           title: "DivineMC",
           items: [
             {
-              label: "FAQ",
-              to: "docs/faq",
+              label: "Download",
+              href: "https://github.com/DivineMC/DivineMC/releases/latest",
             },
           ],
         },
@@ -134,8 +134,8 @@ const config = {
               to: "docs",
             },
             {
-              label: "Releases",
-              href: "https://github.com/DivineMC/DivineMC/releases/latest",
+              label: "FAQ",
+              to: "docs/faq",
             },
           ],
         },

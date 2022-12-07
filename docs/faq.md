@@ -14,7 +14,7 @@ DivineMC provides optimization for large servers requiring both maximum performa
 
 ### 3. What are the supported versions?
 
-Currently, DivineMC supports Minecraft 1.19.2. Old versions of Minecraft will not be supported, but future versions, such as 1.20.x - yes.
+Currently, DivineMC supports Minecraft 1.19.2+. Old versions of Minecraft, like 1.18, 1.17 and etc. will not be supported.
 
 ### 4. Is DivineMC secure?
 
