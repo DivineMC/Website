@@ -1,4 +1,4 @@
-# DivineMC Website ![Build Status](https://img.shields.io/github/workflow/status/DivineMC/Website/DivineMC%20Dev%20Build/main?logo=github) ![Deployment Status](https://img.shields.io/netlify/ad7179d7-d6b8-4b61-80b4-292949cf3500?logo=netlify) ![License](https://img.shields.io/github/license/DivineMC/Website)
+# DivineMC Website ![Build Status](https://img.shields.io/github/actions/workflow/status/DivineMC/Website/build.yml?branch=main&logo=github) ![Deployment Status](https://img.shields.io/netlify/ad7179d7-d6b8-4b61-80b4-292949cf3500?logo=netlify) ![License](https://img.shields.io/github/license/DivineMC/Website)
 
 # Getting Started
 
