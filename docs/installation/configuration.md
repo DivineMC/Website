@@ -4,9 +4,9 @@ slug: /configuration
 
 # Configuration
 
-This page details the various configuration settings exposed by Bukkit, Spigot and paper.
+This page details the various configuration settings exposed by Bukkit, Spigot and Paper.
 
-If you want information on settings in spigot.yml, bukkit.yml and server.properties you should see their respective documentation pages.
+If you want information on settings in **spigot.yml**, **bukkit.yml** and **server.properties** you should see their respective documentation pages.
 
 * [Server Configuration (server.properties)](https://minecraft.fandom.com/wiki/Server.properties)
 
