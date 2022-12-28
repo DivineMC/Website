@@ -2,7 +2,7 @@
 title: DivineMC Release
 authors:
   - name: NONPLAYT
-    title: Founder
+    title: Core Team
     url: https://github.com/NONPLAYT
     image_url: https://avatars.githubusercontent.com/u/76615486?v=4
 hide_table_of_contents: false

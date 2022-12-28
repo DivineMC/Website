@@ -24,6 +24,10 @@ const data: Feature[] = [
     description: "DivineMC have bug fixes for several Minecraft issues.",
   },
   {
+    title: "New features",
+    description: "DivineMC contains PaperMC pull requests patches.",
+  },
+  {
     title: "Faster process",
     description: "Faster process for Vanilla methods.",
   },
