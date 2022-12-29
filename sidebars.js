@@ -6,8 +6,12 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Installation",
-      items: ["installation/getting-started", "installation/configuration"],
+      label: "Administration",
+      items: [
+        "admin/getting-started",
+        "admin/configuration",
+        "admin/how-to-guides",
+      ],
     },
     {
       type: "category",

@@ -44,3 +44,13 @@ The amount of RAM can be set by changing the numbers in the `-Xms` and `-Xmx` ar
 disables Vanilla's GUI, so you don't get double interfaces when using the command line.
 
 For more advanced Java tuning, see [Aikar's Flags](https://docs.papermc.io/paper/aikars-flags) on PaperMC docs.
+
+## Downloading older versions of DivineMC
+
+When you download the server jar, you will get the latest version of DivineMC. If you want to download an older version, you can do so from the releases tab.
+
+Here is a list of all the versions of DivineMC:
+
+Latest [1.19.3](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.3)
+
+Latest [1.19.2](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.2)
