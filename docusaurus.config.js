@@ -148,7 +148,7 @@ const config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} DivineMC & BX Team. All rights reserved. Powered by Netlify`,
+      copyright: `Copyright © ${new Date().getFullYear()} DivineMC. All rights reserved. <a href="https://www.netlify.com" style="text-decoration:underline;color:inherit;">Powered by Netlify</a`,
     },
   },
 };
