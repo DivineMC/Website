@@ -51,6 +51,6 @@ When you download the server jar, you will get the latest version of DivineMC. I
 
 Here is a list of all the versions of DivineMC:
 
-Latest [1.19.3](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.3)
+Latest [1.19.3](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.3) release.
 
-Latest [1.19.2](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.2)
+Latest [1.19.2](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.2) release.
