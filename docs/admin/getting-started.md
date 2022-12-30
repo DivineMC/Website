@@ -43,7 +43,7 @@ you have downloaded. (or just rename downloaded jar to server.jar)
 The amount of RAM can be set by changing the numbers in the `-Xms` and `-Xmx` arguments. `--nogui`
 disables Vanilla's GUI, so you don't get double interfaces when using the command line.
 
-For more advanced Java tuning, see [Aikar's Flags](https://docs.papermc.io/paper/aikars-flags) on PaperMC docs.
+For more advanced Java tuning, see [Aikar's Flags](https://divinemc.bxteam.gq/blog/2022/12/30/Aikar-Flags) tutorial on our blog.
 
 ## Downloading older versions of DivineMC
 

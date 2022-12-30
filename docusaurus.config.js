@@ -37,12 +37,12 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/DivineMC/Website/edit/main/",
+          editUrl: "https://github.com/DivineMC/Website/edit/dev/",
           // includeCurrentVersion: false,
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/DivineMC/Website/edit/main/",
+          editUrl: "https://github.com/DivineMC/Website/edit/dev/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.scss"),
