@@ -20,6 +20,6 @@ If you want information on settings in **spigot.yml**, **bukkit.yml** and **serv
 
 :::info
 
-For now, DivineMC doesn't have configuration now. But maybe, we will add it in future.
+DivineMC have config file `divinemc.yml` but, it is useless for now. Soon we add more config values to config.
 
 :::
