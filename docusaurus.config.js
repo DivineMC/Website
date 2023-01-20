@@ -48,7 +48,7 @@ const config = {
           customCss: require.resolve("./src/css/custom.scss"),
         },
         googleAnalytics: {
-          trackingID: "UA-168263036-5",
+          trackingID: "UA-254781280-1",
           anonymizeIP: true,
         },
       },
