@@ -1,5 +1,5 @@
 ---
-title: Aikar's Flags
+title: Aikar's Flags guide
 authors:
   - name: NONPLAYT
     title: Core Team
@@ -7,8 +7,6 @@ authors:
     image_url: https://avatars.githubusercontent.com/u/76615486?v=4
 hide_table_of_contents: false
 ---
-
-# Aikar's Flags
 
 ## Recommended JVM Startup Flags
 
