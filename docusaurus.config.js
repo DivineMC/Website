@@ -9,7 +9,7 @@ const config = {
   title: "DivineMC",
   tagline:
     "DivineMC is the fork of Paper compatible with Spigot plugins, offering best performance for your server.",
-  url: "https://divine.bxteam.gq",
+  url: "https://divinemc.bxteam.gq",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -38,7 +38,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/DivineMC/Website/edit/dev/",
-          // includeCurrentVersion: false,
+          lastVersion: "current",
+          versions: {
+            current: {
+              label: "Purpur (WIP)",
+            },
+          },
         },
         blog: {
           showReadingTime: true,

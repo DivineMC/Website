@@ -12,13 +12,11 @@ If you want information on settings in **spigot.yml**, **bukkit.yml** and **serv
 
 - [Bukkit Configuration (bukkit.yml)](https://bukkit.fandom.com/wiki/Bukkit.yml)
 
-- [Spigot Configuration (spigot.yml)](https://www.spigotmc.org/wiki/spigot-configuration)
+- [Spigot Configuration (spigot.yml)](https://www.spigotmc.org/wiki/spigot-configuration/)
 
 - [Paper Configuration (paper.yml)](https://docs.papermc.io/paper/reference/paper-global-configuration)
 
-- [Pufferfish Configuration (pufferfish.yml)](https://docs.pufferfish.host/setup/pufferfish-fork-configuration)
-
-- [Purpur Configuration (purpur.yml)](https://purpurmc.org/docs/Configuration)
+- [Pufferfish Configuration (pufferfish.yml)](https://docs.pufferfish.host/setup/pufferfish-fork-configuration/)
 
 :::info
 
