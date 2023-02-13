@@ -28,12 +28,6 @@ DivineMC is a drop in replacement for both CraftBukkit and Spigot, you don't nee
 
 ## Downloading DivineMC
 
-:::caution
-
-DivineMC currently reworking and new updated and features will be in reworked version
-
-:::
-
 DivineMC provides runnable server jars directly from [releases tab](https://github.com/DivineMC/DivineMC/releases/latest) on GitHub or on home page website [here](https://divinemc.bxteam.gq/#download).
 
 Click on the _DivineMC-paperclip-VERSION-reobf.jar_ to download a runnable paperclip jar.
