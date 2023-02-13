@@ -57,7 +57,6 @@ When you download the server jar, you will get the latest version of DivineMC. I
 
 Here is a list of all the versions of DivineMC:
 
-|      Name       |      Fork Of      |                                      Download                                      |
-| :-------------: | :---------------: | :--------------------------------------------------------------------------------: |
-| DivineMC 1.19.3 | Pufferfish 1.19.3 |  [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/release-69)   |
-| DivineMC 1.19.2 | Pufferfish 1.19.2 | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.2) |
+Latest [1.19.3](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.3) release.
+
+Latest [1.19.2](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.2) release.
