@@ -12,7 +12,7 @@ const data: Feature[] = [
   {
     title: "Pufferfish fork",
     description:
-      "DivineMC is a fork of Pufferfish which a the best performance Minecraft core.",
+      "DivineMC using a custom fork of Pufferfish which a the best performance Minecraft core.",
   },
   {
     title: "Lithium patches ",
