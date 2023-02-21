@@ -22,7 +22,7 @@ DivineMC is the fork of Paper, which is well protected from various attacks. But
 
 ### 5. How to install DivineMC?
 
-To install DivineMC, you need to download the latest version of the server jar from [here](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.3). Then, you need to run the server jar using the command `java -Xms2G -Xmx2G -jar server.jar --nogui`. Ensure you replace `server.jar` with the name of the jar you have downloaded. (or just rename downloaded jar to server.jar)
+To install DivineMC, you need to download the latest version of the server jar from [here](https://github.com/DivineMC/DivineMC/releases/latest). Then, you need to run the server jar using the command `java -Xms2G -Xmx2G -jar server.jar --nogui`. Ensure you replace `server.jar` with the name of the jar you have downloaded. (or just rename downloaded jar to server.jar). If you want, you can add flags to make server better. Read [this](https://divinemc.bxteam.gq/blog/2022/12/30/Aikar-Flags) or [this](https://divinemc.bxteam.gq/blog/2023/01/20/Updated-Aikar-Flags) articles
 
 Also you can read [this](https://divinemc.bxteam.gq/docs/getting-started#downloading-divinemc) article.
 
