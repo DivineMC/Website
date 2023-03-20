@@ -18,8 +18,12 @@ If you want information on settings in **spigot.yml**, **bukkit.yml** and **serv
 
 - [Pufferfish Configuration (pufferfish.yml)](https://docs.pufferfish.host/setup/pufferfish-fork-configuration/)
 
-:::info
+## DivineMC Configuration (divinemc.yml)
 
-DivineMC have config file `divinemc.yml` but, it is useless for now. Soon we add more config values to config.
+In recent versions of DivineMC, the configuration file is now have some new settings. In future, we will add more settings to configuration file.
 
-:::
+### no-chat-reports:
+
+- enable: `true` (default)
+- convert-to-game-message: `true` (default)
+- add-query-data: `true` (default)
