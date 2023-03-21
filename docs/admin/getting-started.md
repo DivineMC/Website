@@ -28,12 +28,6 @@ DivineMC is a drop in replacement for both CraftBukkit and Spigot, you don't nee
 
 ## Downloading DivineMC
 
-:::info
-
-1.19.4 update in progress! Please wait for the update to be released. We will remove this message when the update is released.
-
-:::
-
 DivineMC provides runnable server jars directly from [releases tab](https://github.com/DivineMC/DivineMC/releases/latest) on GitHub or on home page website [here](https://divinemc.bxteam.gq/#download).
 
 Click on the _DivineMC-paperclip-VERSION-reobf.jar_ to download a runnable paperclip jar.
@@ -59,5 +53,6 @@ Here is a list of all the versions of DivineMC:
 
 |      Name       |      Fork Of      |                                      Download                                      |
 | :-------------: | :---------------: | :--------------------------------------------------------------------------------: |
+| DivineMC 1.19.4 | Pufferfish 1.19.4 | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.4) |
 | DivineMC 1.19.3 | Pufferfish 1.19.3 | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.3) |
 | DivineMC 1.19.2 | Pufferfish 1.19.2 | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.2) |

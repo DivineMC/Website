@@ -17,13 +17,3 @@ If you want information on settings in **spigot.yml**, **bukkit.yml** and **serv
 - [Paper Configuration (paper.yml)](https://docs.papermc.io/paper/reference/paper-global-configuration)
 
 - [Pufferfish Configuration (pufferfish.yml)](https://docs.pufferfish.host/setup/pufferfish-fork-configuration/)
-
-## DivineMC Configuration (divinemc.yml)
-
-In recent versions of DivineMC, the configuration file is now have some new settings. In future, we will add more settings to configuration file.
-
-### no-chat-reports:
-
-- enable: `true` (default)
-- convert-to-game-message: `true` (default)
-- add-query-data: `true` (default)
