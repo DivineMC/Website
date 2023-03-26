@@ -38,7 +38,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/DivineMC/Website/edit/dev/",
-          // includeCurrentVersion: false,
+          lastVersion: "current",
+          versions: {
+            current: {
+              label: "Purpur (WIP)",
+            },
+          },
         },
         blog: {
           showReadingTime: true,

@@ -1,0 +1,24 @@
+{
+  "docs": [
+    {
+      "type": "doc",
+      "id": "README"
+    },
+    {
+      "type": "category",
+      "label": "Administration",
+      "items": [
+        "admin/getting-started",
+        "admin/configuration",
+        "admin/how-to-guides"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Development",
+      "items": [
+        "dev/contributing"
+      ]
+    }
+  ]
+}
