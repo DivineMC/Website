@@ -98,10 +98,10 @@ const config = {
           label: "Docs",
           position: "left",
         },
-        //{
-        //  position: "right",
-        //  type: "docsVersionDropdown",
-        //},
+        {
+          position: "right",
+          type: "docsVersionDropdown",
+        },
         { to: "blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/DivineMC/DivineMC",
