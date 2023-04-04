@@ -72,10 +72,6 @@ Assuming you have already forked the repository:
 2. Type `./gradlew applyPatches` in a terminal to apply the changes from upstream.
    On Windows, leave out the `./` at the beginning for all `gradlew` commands;
 3. cd into `DivineMC-Server` for server changes, and `DivineMC-API` for API changes.
-<!--You can also run `./paper server` or `./paper api` for these same directories
-respectively.
-4. You can also run `./paper setup`, which allows you to type `paper <command>`
-   from anywhere in the Paper structure in most cases.-->
 
 `DivineMC-Server` and `DivineMC-API` aren't git repositories in the traditional sense:
 
