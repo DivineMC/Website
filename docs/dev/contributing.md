@@ -31,12 +31,12 @@ which can be obtained in (most) package managers such as `apt` (Debian / Ubuntu;
 you will most likely use this for WSL), `homebrew` (macOS / Linux), and more:
 
 - `git` (package `git` everywhere);
-- A Java 17 or later JDK (packages vary, use Google/DuckDuckGo/etc.).
+- A Java 16 or later JDK (packages vary, use Google/DuckDuckGo/etc.).
   - [Adoptium](https://adoptium.net/) has builds for most operating systems.
   - DivineMC requires JDK 17 to build, however makes use of Gradle's
     [Toolchains](https://docs.gradle.org/current/userguide/toolchains.html)
     feature to allow building with only JRE 8 or later installed. (Gradle will
-    automatically provision JDK 17 for compilation if it cannot find an existing
+    automatically provision JDK 16 for compilation if it cannot find an existing
     install).
 
 If you're on Windows, check
@@ -46,21 +46,21 @@ If you're compiling with Docker, you can use Adoptium's
 [`eclipse-temurin`](https://hub.docker.com/_/eclipse-temurin/) images like so:
 
 ```console
-# docker run -it -v "$(pwd)":/data --rm eclipse-temurin:17.0.1_12-jdk bash
+# docker run -it -v "$(pwd)":/data --rm eclipse-temurin:16.0.2_7-jdk bash
 Pulling image...
 
 root@abcdefg1234:/# javac -version
-javac 17.0.1
+javac 16.0.2
 ```
 
 ## Understanding Patches
 
-DivineMC is mostly patches and extensions to Spigot. These patches/extensions are
+DivineMC is mostly patches and extensions to Paper/Spigot. These patches/extensions are
 split into different directories which target certain parts of the code. These
 directories are:
 
-- `DivineMC-API` - Modifications to `Spigot-API`/`Bukkit`;
-- `DivineMC-Server` - Modifications to `Spigot`/`CraftBukkit`.
+- `DivineMC-API` - Modifications to `Paper-API` and `Purpur-API`;
+- `DivineMC-Server` - Modifications to `Paper-Server` and `Purpur-Server`.
 
 Because the entire structure is based on patches and git, a basic understanding
 of how to use git is required. A basic tutorial can be found here:
@@ -72,8 +72,12 @@ Assuming you have already forked the repository:
 2. Type `./gradlew applyPatches` in a terminal to apply the changes from upstream.
    On Windows, leave out the `./` at the beginning for all `gradlew` commands;
 3. cd into `DivineMC-Server` for server changes, and `DivineMC-API` for API changes.
+<!--You can also run `./paper server` or `./paper api` for these same directories
+respectively.
+4. You can also run `./paper setup`, which allows you to type `paper <command>`
+   from anywhere in the Paper structure in most cases.-->
 
-`DivineMC-DivineMC` and `DivineMC-API` aren't git repositories in the traditional sense:
+`DivineMC-Server` and `DivineMC-API` aren't git repositories in the traditional sense:
 
 - `base` points to the unmodified source before DivineMC patches have been applied.
 - Each commit after `base` is a patch.
@@ -167,7 +171,7 @@ messing with your HEADs.
      assist you too.
    - Alternatively, if you only know the name of the patch, you can do
      `git commit -a --fixup "Subject of Patch name"`.
-1. Rebase with autosquash: `git rebase -i --autosquash base`.
+1. Rebase with autosquash: `git rebase --autosquash -i base`.
    This will automatically move your fixup commit to the right place, and you just
    need to "save" the changes.
 1. Type `./gradlew rebuildPatches` in the root directory;
@@ -210,7 +214,8 @@ All modifications to non-DivineMC files should be marked.
   `// DivineMC start - reason`.
   - The comments should generally be about the reason the change was made, what
     it was before, or what the change is.
-  - Multi-line messages should start with `// DivineMC start` and use `/* Multi line message here */` for the message itself.
+  - Multi-line messages should start with `// DivineMC start` and use `/* Multi
+line message here */` for the message itself.
 - One-line changes should have `// DivineMC` or `// DivineMC - reason`.
 
 Here's an example of how to mark changes by DivineMC:
@@ -269,8 +274,8 @@ Subject: [PATCH] revert serverside behavior of keepalives
 
 This patch intends to bump up the time that a client has to reply to the
 server back to 30 seconds as per pre 1.12.2, which allowed clients
-more than enough time to reply potentially allowing them to be less
-tempermental due to lag spikes on the network thread, e.g. that caused
+more than enough time to reply, potentially allowing them to be less
+temperamental due to lag spikes on the network thread, e.g. that caused
 by plugins that are interacting with netty.
 
 We also add a system property to allow people to tweak how long the server
@@ -307,6 +312,59 @@ While they may not always be done in exactly the same way, the general goal is
 always to improve readability and maintainability. Use your best judgment and do
 what fits best in your situation.
 
+## Configuration files
+
+To use a configurable value in your patch, add a new entry in either the
+`DivineConfig` or `DivineWorldConfig` classes. Use `DivineConfig` if a value
+must remain the same throughout all worlds, or the latter if it can change
+between worlds. World-specific configuration options are preferred whenever
+possible.
+
+### DivineConfig example
+
+```java
+public static boolean saveEmptyScoreboardTeams = false;
+private static void saveEmptyScoreboardTeams() {
+    // This is called automatically!
+    // The name also doesn't matter.
+    saveEmptyScoreboardTeams = getBoolean("settings.save-empty-scoreboard-teams", false);
+}
+```
+
+Notice that the field is always public, but the setter is always private. This
+is important to the way the configuration generation system works. To access
+this value, reference it as you would any other static value:
+
+```java
+if (!DivineConfig.saveEmptyScoreboardTeams) {
+```
+
+It is often preferred that you use the fully qualified name for the
+configuration class when accessing it, like so:
+`gq.bxteam.divinemc.configuration.DivineConfig.valueHere`.  
+If this is not done, a developer for DivineMC might fix that for you before
+merging, but it's always nice if you make it a habit where you only need 1-2
+lines changed.
+
+### DivineWorldConfig example
+
+```java
+public boolean useInhabitedTime = true;
+private void useInhabitedTime() {
+    // This is called automatically!
+    // The name also doesn't matter.
+    useInhabitedTime = getBoolean("use-chunk-inhabited-timer", true);
+}
+```
+
+Again, notice that the field is always public, but the setter is always private.
+To access this value, you'll need an instance of the `net.minecraft.world.level.Level`
+object:
+
+```java
+return this.level.divinemcConfig.useInhabitedTime ? this.inhabitedTime : 0;
+```
+
 ## Testing API changes
 
 ### Publishing to Maven local (use in external plugins)
@@ -342,8 +400,8 @@ patching process.
    progress will be lost if you do not;
 1. Identify the name(s) of the file(s) you want to import.
    - A complete list of all possible file names can be found at
-     `./Paper-Server/.gradle/caches/paperweight/mc-dev-sources/net/minecraft/`. You might find
-     [MappingViewer] useful if you need to translate between Mojang and Spigot mapped names.
+     `./DivineMC-Server/.gradle/caches/paperweight/mc-dev-sources/net/minecraft/`. You might find
+     [MiniMappingViewer] useful if you need to translate between Mojang and Spigot mapped names.
 1. Open the file at `./build-data/dev-imports.txt` and add the name of your file to
    the script. Follow the instructions there;
 1. Re-patch the server `./gradlew applyPatches`;
@@ -368,25 +426,24 @@ file (`CONTRIBUTING.md`), the `LICENSE.md` file, and so forth.
 ### Patching and building is _really_ slow, what can I do?
 
 This only applies if you're running Windows. If you're running a prior Windows
-release, either update to Windows 10/11 or move to macOS/Linux/BSD.
+release, either update to Windows 10 or move to macOS/Linux/BSD.
 
-In order to speed up patching process on Windows, it's recommended you get WSL 2. This is available in Windows 10 v2004, build 19041 or higher. (You can check
+In order to speed up patching process on Windows, it's recommended you get WSL. 2. This is available in Windows 10 v2004, build 19041 or higher. (You can check
 your version by running `winver` in the run window (Windows key + R)). If you're
-using an out of date version of Windows 10, update your system with the
-[Windows 10 Update Assistant](https://www.microsoft.com/en-us/software-download/windows10) or [Windows 11 Update Assistant](https://www.microsoft.com/en-us/software-download/windows11).
+out of date, update your system with the
+[Windows Update Assistant](https://www.microsoft.com/en-us/software-download/windows10).
 
 To set up WSL 2, follow the information here:
-<https://docs.microsoft.com/en-us/windows/wsl/install>
+<https://docs.microsoft.com/en-us/windows/wsl/install-win10>
 
 You will most likely want to use the Ubuntu apps. Once it's set up, install the
-required tools with `sudo apt-get update && sudo apt-get install $TOOL_NAMES -y`. Replace `$TOOL_NAMES` with the packages found in the
+required tools with `sudo apt-get update && sudo apt-get install $TOOL_NAMES
+-y`. Replace `$TOOL_NAMES` with the packages found in the
 [requirements](#requirements). You can now clone the repository and do
 everything like usual.
 
 > ❗ Do not use the `/mnt/` directory in WSL! Instead, mount the WSL directories
 > in Windows like described here:
-> <https://docs.microsoft.com/en-us/windows/wsl/filesystems#view-your-current-directory-in-windows-file-explorer>
+> <https://www.howtogeek.com/426749/how-to-access-your-linux-wsl-files-in-windows-10/>
 
-[mappingviewer]: https://nms.screamingsandals.org/
-
-<!-- This is modified version of PaperMC contributing guide -->
+[MiniMappingViewer]: https://minidigger.github.io/MiniMappingViewer/

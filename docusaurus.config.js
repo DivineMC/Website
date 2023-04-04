@@ -41,7 +41,7 @@ const config = {
           lastVersion: "current",
           versions: {
             current: {
-              label: "Purpur (WIP)",
+              label: "Purpur",
             },
           },
         },
