@@ -31,12 +31,12 @@ which can be obtained in (most) package managers such as `apt` (Debian / Ubuntu;
 you will most likely use this for WSL), `homebrew` (macOS / Linux), and more:
 
 - `git` (package `git` everywhere);
-- A Java 16 or later JDK (packages vary, use Google/DuckDuckGo/etc.).
+- A Java 17 or later JDK (packages vary, use Google/DuckDuckGo/etc.).
   - [Adoptium](https://adoptium.net/) has builds for most operating systems.
   - DivineMC requires JDK 17 to build, however makes use of Gradle's
     [Toolchains](https://docs.gradle.org/current/userguide/toolchains.html)
     feature to allow building with only JRE 8 or later installed. (Gradle will
-    automatically provision JDK 16 for compilation if it cannot find an existing
+    automatically provision JDK 17 for compilation if it cannot find an existing
     install).
 
 If you're on Windows, check
