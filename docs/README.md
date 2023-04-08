@@ -1,28 +1,17 @@
 # Home
 
-DivineMC is the fork of Paper compatible with Spigot plugins, offering best performance for your server.
+DivineMC is the fork of Purpur compatible with Spigot plugins, offering the best performance for your server.
 
 ## Features
 
-- **DivineMC is a fork of [Pufferfish](https://github.com/pufferfish-gg/Pufferfish)** which a the best performance Minecraft core.
-- **Contains [Lithium](https://github.com/CaffeineMC/lithium-fabric) patches** which is optimize many areas in game.
+- **DivineMC is a fork of [Purpur](https://github.com/PurpurMC/Purpur)** designed for configurability, new fun and exciting gameplay features.
 - **Bug fixes** for several Minecraft issues.
 - **Contains** PaperMC pull requests patches.
-- **Faster process** for Vanilla methods.
-- **Dynamic mine-carts speed**
 - **Plugin compatibility** with Spigot & Paper plugins.
-
-## We use patches from the following projects
-
-- **[Paper](https://github.com/PaperMC/Paper)**
-- **[Purpur](https://github.com/PurpurMC/Purpur)**
-- **[Kiterino](https://github.com/SoSeDiKs-Universe/Kiterino)**
-- **[Mirai](https://github.com/etil2jz/Mirai)**
-- **NOTE: We also borrow some patches from [Yatopia](https://github.com/YatopiaMC/Yatopia).**
 
 ## Downloads
 
-In normal case, you can download latest JAR file from releases tab [here](https://github.com/DivineMC/DivineMC/releases/latest)
+In normal case, you can download the latest JAR file from releases tab [here](https://github.com/DivineMC/DivineMC/releases/latest)
 
 **Please note:** Java >= 17 is required.
 
