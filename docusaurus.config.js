@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "DivineMC",
   tagline:
-    "DivineMC is the fork of Paper compatible with Spigot plugins, offering best performance for your server.",
+    "DivineMC is the fork of Purpur compatible with Spigot plugins, offering the best performance for your server.",
   url: "https://divinemc.bxteam.gq",
   baseUrl: "/",
   onBrokenLinks: "throw",

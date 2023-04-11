@@ -10,30 +10,30 @@ interface Feature {
 
 const data: Feature[] = [
   {
-    title: "Pufferfish fork",
+    title: "Purpur fork",
     description:
-      "DivineMC is a fork of Pufferfish which a the best performance Minecraft core.",
+      "DivineMC is the fork of Purpur compatible with Spigot plugins, offering the best performance for your server.",
   },
   {
     title: "Lithium patches ",
     description:
-      "DivineMC contains Lithium patches which is optimize many areas in game.",
-  },
-  {
-    title: "Bug fixes",
-    description: "DivineMC have bug fixes for several Minecraft issues.",
+      "DivineMC contains Lithium patches that optimizing many areas in game.",
   },
   {
     title: "New features",
-    description: "DivineMC contains PaperMC pull requests patches.",
+    description: "DivineMC contains some PaperMC pull requests patches.",
   },
   {
-    title: "Faster process",
-    description: "Faster process for Vanilla methods.",
+    title: "Bug fixes",
+    description: "DivineMC have patches that fixes bugs for several Minecraft issues.",
   },
   {
     title: "Plugin compatibility",
-    description: "DivineMC have compatibility with Spigot & Paper plugins.",
+    description: "DivineMC have full compatibility with Spigot & Paper plugins.",
+  },
+  {
+    title: "Fast upstream",
+    description: "DivineMC always updated to latest version of upstream",
   },
 ];
 

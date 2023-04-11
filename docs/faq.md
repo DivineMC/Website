@@ -6,7 +6,7 @@ sidebar_label: FAQ
 
 ### 1. What is DivineMC?
 
-DivineMC is the fork of Paper compatible with Spigot plugins, offering best performance for your server.
+DivineMC is the fork of Purpur compatible with Spigot plugins, offering the best performance for your server.
 
 ### 2. Why use DivineMC?
 
@@ -18,7 +18,7 @@ Currently, DivineMC supports Minecraft 1.19.2+. Old versions of Minecraft, like 
 
 ### 4. Is DivineMC secure?
 
-DivineMC is the fork of Paper, which is well protected from various attacks. But you can also install plugins that give more protect!
+DivineMC is the fork of Purpur, which is well protected from various attacks. But you can also install plugins that give more protect!
 
 ### 5. How to install DivineMC?
 
