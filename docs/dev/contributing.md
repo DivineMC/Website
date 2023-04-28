@@ -414,7 +414,7 @@ To undo your changes to the file, type `git checkout build-data/dev-imports.txt`
 
 ### My commit doesn't need a build, what do I do?
 
-Well, quite simple: You add `[ci skip]` to the start of your commit subject.
+Well, quite simple: You add `[ci-skip]` to the start of your commit subject.
 
 This case most often applies to changes to files like `README.md`, this very
 file (`CONTRIBUTING.md`), the `LICENSE.md` file, and so forth.
