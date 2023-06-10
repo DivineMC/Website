@@ -16,7 +16,7 @@ If you want information on settings in **paper.yml**, **spigot.yml**, **bukkit.y
 
 - [Paper Configuration (paper.yml)](https://docs.papermc.io/paper/reference/paper-global-configuration)
 
-- [Pufferfish Configuration (pufferfish.yml)](https://docs.pufferfish.host/setup/pufferfish-fork-configuration)
+- [Pufferfish Configuration (pufferfish.yml)](https://docs.pufferfish.host/setup/pufferfish-fork-configuration) (not available right now in DivineMC)
 
 - [Purpur Configuration (purpur.yml)](https://purpurmc.org/docs/Configuration)
 
@@ -59,12 +59,12 @@ For a more clear explanation of the world settings section of the config, feel f
 
 ### gameplay-mechanics
 
-- #### tools
+- #### mob
 
-  - ##### trident
-    - ##### better-impaling
+  - ##### shulker
+    - ##### despawn-bullets-on-player-death
       - **default**: true
-      - **description**: Enables a better impaling enchantment for trident
+      - **description**: If player is dead from shulker - bullets disappering for optimization
 
 - #### boat
 
@@ -76,9 +76,3 @@ For a more clear explanation of the world settings section of the config, feel f
   - ##### always-allow-to-enter-the-boat
     - **default**: true
     - **description**: Player can enter the boat anywhere
-
-- #### mob
-  - ##### shulker
-    - ##### despawn-bullets-on-player-death
-      - **default**: true
-      - **description**: If player is dead from shulker - bullets disappering for optimization

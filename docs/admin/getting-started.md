@@ -51,9 +51,10 @@ When you download the server jar, you will get the latest version of DivineMC. I
 
 Here is a list of all the versions of DivineMC:
 
-|      Name       |      Fork Of      |                                      Download                                      |
-| :-------------: | :---------------: | :--------------------------------------------------------------------------------: |
-| DivineMC 1.19.4 | Purpur 1.19.4 | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.4) |
-| DivineMC 1.19.4 | Pufferfish 1.19.4 | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/release-109) |
-| DivineMC 1.19.3 | Pufferfish 1.19.3 | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.3) |
-| DivineMC 1.19.2 | Pufferfish 1.19.2 | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.2) |
+|      Name       |          Fork Of           |                                      Download                                      |
+| :-------------: | :------------------------: | :--------------------------------------------------------------------------------: |
+|  DivineMC 1.20  | Purpur 1.20 (Experimental) |  [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.20)  |
+| DivineMC 1.19.4 |       Purpur 1.19.4        | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.4) |
+| DivineMC 1.19.4 |     Pufferfish 1.19.4      |  [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/release-109)  |
+| DivineMC 1.19.3 |     Pufferfish 1.19.3      | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.3) |
+| DivineMC 1.19.2 |     Pufferfish 1.19.2      | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.2) |
