@@ -45,16 +45,17 @@ disables Vanilla's GUI, so you don't get double interfaces when using the comman
 
 For more advanced Java tuning, see [Aikar's Flags](https://divinemc.bxteam.gq/blog/2022/12/30/Aikar-Flags) tutorial on our blog. Or you can read more [advanced Aikar's Flags](https://divinemc.bxteam.gq/blog/2023/01/20/Updated-Aikar-Flags) tutorial on our blog.
 
-## Downloading older versions of DivineMC
+## List of all DivineMC versions
 
-When you download the server jar, you will get the latest version of DivineMC. If you want to download an older version, you can do so from the releases tab.
+When you download the server jar, you will get the latest version of DivineMC. If you want to download an older version, you can do so from the releases tab or here.
 
 Here is a list of all the versions of DivineMC:
 
-|      Name       |          Fork Of           |                                      Download                                      |
-| :-------------: | :------------------------: | :--------------------------------------------------------------------------------: |
-|  DivineMC 1.20  | Purpur 1.20 (Experimental) |  [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.20)  |
-| DivineMC 1.19.4 |       Purpur 1.19.4        | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.4) |
-| DivineMC 1.19.4 |     Pufferfish 1.19.4      |  [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/release-109)  |
-| DivineMC 1.19.3 |     Pufferfish 1.19.3      | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.3) |
-| DivineMC 1.19.2 |     Pufferfish 1.19.2      | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.2) |
+|      Name       |      Fork Of      |                                      Download                                      |
+| :-------------: | :---------------: | :--------------------------------------------------------------------------------: |
+| DivineMC 1.20.1 |   Purpur 1.20.1   | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.20.1) |
+|  DivineMC 1.20  |    Purpur 1.20    |  [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.20)  |
+| DivineMC 1.19.4 |   Purpur 1.19.4   | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.4) |
+| DivineMC 1.19.4 | Pufferfish 1.19.4 |  [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/release-109)  |
+| DivineMC 1.19.3 | Pufferfish 1.19.3 | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.3) |
+| DivineMC 1.19.2 | Pufferfish 1.19.2 | [Download latest](https://github.com/DivineMC/DivineMC/releases/tag/latest-1.19.2) |
