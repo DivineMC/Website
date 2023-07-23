@@ -3913,10 +3913,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-sass@0.2.4:
-  version "0.2.4"
-  resolved "https://registry.npmjs.org/docusaurus-plugin-sass/-/docusaurus-plugin-sass-0.2.4.tgz"
-  integrity sha512-r9bLXW6X2z64bzQUQZB1SxmNlGvSO9swTFALgiMjr/1O4FRDti6BseU4Sw2mlZkYvVQTq8cJMJIP6w7z/5We8Q==
+docusaurus-plugin-sass@0.2.5:
+  version "0.2.5"
+  resolved "https://registry.npmjs.org/docusaurus-plugin-sass/-/docusaurus-plugin-sass-0.2.5.tgz"
+  integrity sha512-Z+D0fLFUKcFpM+bqSUmqKIU+vO+YF1xoEQh5hoFreg2eMf722+siwXDD+sqtwU8E4MvVpuvsQfaHwODNlxJAEg==
   dependencies:
     sass-loader "^10.1.1"
 
