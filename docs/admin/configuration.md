@@ -16,7 +16,7 @@ If you want information on settings in **paper.yml**, **spigot.yml**, **bukkit.y
 
 - [Paper Configuration (paper.yml)](https://docs.papermc.io/paper/reference/paper-global-configuration)
 
-- [Pufferfish Configuration (pufferfish.yml)](https://docs.pufferfish.host/setup/pufferfish-fork-configuration) (not available right now in DivineMC)
+- [Pufferfish Configuration (pufferfish.yml)](https://docs.pufferfish.host/setup/pufferfish-fork-configuration)
 
 - [Purpur Configuration (purpur.yml)](https://purpurmc.org/docs/Configuration)
 
